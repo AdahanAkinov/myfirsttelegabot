@@ -13,7 +13,7 @@ def get_user_text(message):
     elif message.text == "id":
         bot.send_message(message.chat.id, f"Your id is: {message.from_user.id}", parse_mode='html')
     else:
-        bot.send_message(message.chat.id, "I dont know", parse_mode='html')
+        bot.send_message(message.chat.id, "I dont know why", parse_mode='html')
 
 
 bot.polling(none_stop=True)
